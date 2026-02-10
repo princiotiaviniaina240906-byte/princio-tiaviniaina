@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiavina Rakotovao - Portfolio Étudiant Télécommunications</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Écran d'accueil avec profil et 6 boutons principaux -->
+    <div id="home-screen" class="screen active">
+        <div class="container">
+            <!-- Section Profil -->
+            <div class="profile-section">
+                <div class="profile-image-container">
+                    <img src="assets/images/profile.jpg" alt="Tiavina Rakotovao" class="profile-image">
+                    <button id="voir-profile-btn" class="profile-btn">
+                        <i class="fas fa-eye"></i> VOIR LE PROFILE
+                    </button>
+                </div>
+                
+                <div class="profile-info">
+                    <h1 class="profile-name">RAKOTOVAO Tiaviniaina</h1>
+                    <h2 class="profile-title">Étudiant L3 Télécommunications – Réseaux & Systèmes</h2>
+                    
+                    <div class="profile-summary">
+                        <h3><i class="fas fa-user-tie"></i> RÉSUMÉ PROFESSIONNEL</h3>
+                        <p>Étudiant dynamique en fin de cycle de Licence en Télécommunications, spécialisé en Réseaux et Systèmes. Passionné par l'infrastructure informatique et l'innovation technologique, j'allie mes compétences académiques en gestion de serveurs et équipements réseaux avec une expertise moderne en IA générative et automatisation. Mon objectif est de concevoir des solutions connectées, sécurisées et optimisées pour les entreprises de demain.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Grille des 6 boutons principaux -->
+            <div class="main-buttons-grid">
+                <button class="main-btn" data-target="cv-screen">
+                    <div class="btn-icon">
+                        <i class="fas fa-file-download"></i>
+                    </div>
+                    <span>TÉLÉCHARGEMENT CV</span>
+                </button>
+                
+                <button class="main-btn" data-target="contact-screen">
+                    <div class="btn-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <span>CONTACT</span>
+                </button>
+                
+                <button class="main-btn" data-target="links-screen">
+                    <div class="btn-icon">
+                        <i class="fas fa-external-link-alt"></i>
+                    </div>
+                    <span>LIENS EXTERNES</span>
+                </button>
+                
+                <button class="main-btn" data-target="projects-screen">
+                    <div class="btn-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <span>PROJETS RÉALISÉS</span>
+                </button>
+                
+                <button class="main-btn" data-target="testimonials-screen">
+                    <div class="btn-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <span>TÉMOIGNAGES</span>
+                </button>
+                
+                <button class="main-btn" data-target="newsletter-screen">
+                    <div class="btn-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <span>NEWSLETTER</span>
+                </button>
+            </div>
+            
+            <!-- QR Code pour partage -->
+            <div class="qr-code-section">
+                <h3><i class="fas fa-share-alt"></i> PARTAGEZ MON PORTFOLIO</h3>
+                <div class="qr-container">
+                    <img src="assets/images/qr-code.png" alt="QR Code Portfolio" class="qr-code">
+                    <p>Scannez pour visiter mon portfolio</p>
+                </div>
+                <p class="url-display">https://tiavina.github.io/portfolio</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Écran Téléchargement CV -->
+    <div id="cv-screen" class="screen">
+        <div class="screen-header">
+            <h2><i class="fas fa-file-download"></i> TÉLÉCHARGEMENT CV</h2>
+            <button class="cancel-btn">
+                <i class="fas fa-times"></i> RETOUR
+            </button>
+        </div>
+        
+        <div class="screen-content">
+            <div class="cv-section">
+                <div class="cv-download-card">
+                    <h3><i class="fas fa-download"></i> TÉLÉCHARGER LE CV (PDF)</h3>
+                    <p>Maintenant, vous pouvez télécharger mon CV complet au format PDF.</p>
+                    <a href="assets/pdf/cv-tiavina-rakotovao.pdf" class="download-link" download>
+                        <i class="fas fa-file-pdf"></i> Télécharger CV (PDF)
+                    </a>
+                    <p class="file-info">Taille: 245 KB | Dernière mise à jour: Nov 2024</p>
+                </div>
+                
+                <div class="cv-details">
+                    <div class="cv-item">
+                        <h3><i class="fas fa-graduation-cap"></i> FORMATION ACADÉMIQUE</h3>
+                        <ul>
+                            <li><strong>2023 - 2026 :</strong> Licence 3 en Télécommunications - Parcours : Réseaux et Systèmes à l'École Supérieure d'Ingénierie de l'Itasy (ES2I).</li>
+                            <li><strong>2023 :</strong> Baccalauréat Scientifique Série C</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cv-item">
+                        <h3><i class="fas fa-cogs"></i> COMPÉTENCES TECHNIQUES & TRANSVERSALES</h3>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Réseaux</h4>
+                                <ul>
+                                    <li>Configuration Switch & Router (Cisco)</li>
+                                    <li>VLAN, Routage IP (Static, OSPF)</li>
+                                    <li>Modèle OSI, TCP/IP</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Systèmes</h4>
+                                <ul>
+                                    <li>Administration Linux (Debian/Ubuntu)</li>
+                                    <li>Installation de services (DNS, DHCP, Web)</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Télécoms</h4>
+                                <ul>
+                                    <li>Transmission de données</li>
+                                    <li>Fibres optiques</li>
+                                    <li>Téléphonie IP (VoIP)</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>IA & Automatisation</h4>
+                                <ul>
+                                    <li>Prompt Engineering</li>
+                                    <li>Automatisation de tâches avec outils No-code (Make, Zapier)</li>
+                                    <li>IA générative (ChatGPT, Claude API)</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Sécurité</h4>
+                                <ul>
+                                    <li>Notions de Firewall, SSH, VPN</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Compétences transversales</h4>
+                                <ul>
+                                    <li>Autonomie : Capacité à apprendre rapidement de nouvelles technologies</li>
+                                    <li>Esprit d'analyse : Diagnostic et le Troubleshooting</li>
+                                    <li>Adaptabilité : Travail d'équipe</li>
+                                    <li>Communication</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cv-item">
+                        <h3><i class="fas fa-certificate"></i> CERTIFICATION</h3>
+                        <div class="certification-card">
+                            <i class="fas fa-award"></i>
+                            <p>"Certificat en IA Générative et Automatisation des tâches chez Orange Digital Center (ODC) Madagascar."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Écran Contact -->
+    <div id="contact-screen" class="screen">
+        <div class="screen-header">
+            <h2><i class="fas fa-envelope"></i> CONTACT</h2>
+            <button class="cancel-btn">
+                <i class="fas fa-times"></i> RETOUR
+            </button>
+        </div>
+        
+        <div class="screen-content">
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h3><i class="fas fa-paper-plane"></i> Envoyez-moi un message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" placeholder="Tiavina" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="princiotiaviniaina240906@gmail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Objet</label>
+                            <input type="text" id="subject" placeholder="Proposition de Stage" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="Votre message..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3><i class="fas fa-address-card"></i> Mes Coordonnées Directes</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Professionnel</h4>
+                                <p>princiotiaviniaina240906@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <p>+261 38 53 132 94</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Localisation</h4>
+                                <p>Andranomena Ambohimanarina, Antananarivo, Madagascar</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="online-presence"><i class="fas fa-globe"></i> Présence en ligne</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/tiavina-ramarolahy-552177364" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn : Tiavina Ramarolahy (Expertise Réseaux & IA)
+                        </a>
+                        <a href="https://github.com/tiavina" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub : Mon Profil Technique (Scripts d'automatisation et projets réseaux)
+                        </a>
+                        <a href="https://wa.me/261385313294" class="social-link" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp : Démarrer une discussion
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Écran Liens Externes -->
+    <div id="links-screen" class="screen">
+        <div class="screen-header">
+            <h2><i class="fas fa-external-link-alt"></i> LIENS EXTERNES</h2>
+            <button class="cancel-btn">
+                <i class="fas fa-times"></i> RETOUR
+            </button>
+        </div>
+        
+        <div class="screen-content">
+            <div class="links-container">
+                <div class="external-link-card">
+                    <div class="link-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p class="link-url">https://github.com/tiavina</p>
+                    <p class="link-description">"Explorez mes dépôts où je partage mes travaux pratiques en administration réseaux et mes scripts d'automatisation."</p>
+                    
+                    <div class="projects-list">
+                        <h4>Exemples de projets à lister (Dépôts) :</h4>
+                        <div class="project-item">
+                            <h5>NetConfig-Automation</h5>
+                            <p>Scripts Python pour la configuration automatique de commutateurs Cisco (VLAN, SSH).</p>
+                        </div>
+                        <div class="project-item">
+                            <h5>Debian-Server-Hardening</h5>
+                            <p>Guide et scripts pour sécuriser un serveur Linux (Fail2Ban, Firewalling).</p>
+                        </div>
+                        <div class="project-item">
+                            <h5>GNS3-Topologies</h5>
+                            <p>Architectures réseaux complexes simulées (Routage OSPF/BGP).</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://github.com/tiavina" class="visit-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Visiter GitHub
+                    </a>
+                </div>
+                
+                <div class="external-link-card">
+                    <div class="link-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p class="link-url">https://www.linkedin.com/in/tiavina-ramarolahy-552177364</p>
+                    <div class="linkedin-summary">
+                        <h4>Résumé Professionnel:</h4>
+                        <p>"Étudiant en 3ème année de Télécommunications à l'ESI Itasy, spécialisé en Réseaux et Systèmes. Passionné par l'infrastructure IT et l'innovation, j'intègre l'IA générative pour optimiser les tâches d'administration système. Certifié par Orange Digital Center en automatisation, je recherche des opportunités pour relever les défis de la connectivité de demain."</p>
+                    </div>
+                    <a href="https://www.linkedin.com/in/tiavina-ramarolahy-552177364" class="visit-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Visiter LinkedIn
+                    </a>
+                </div>
+                
+                <div class="external-link-card">
+                    <div class="link-icon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Site personnel</h3>
+                    <p class="link-url">https://tiavina.pythonanywhere.com</p>
+                    <p class="link-description">"Une vue d'ensemble interactive de mon parcours, mes certifications ODC et ma vision du métier d'ingénieur télécom."</p>
+                    <a href="https://tiavina.pythonanywhere.com" class="visit-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Visiter le site
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Écran Projets Réalisés -->
+    <div id="projects-screen" class="screen">
+        <div class="screen-header">
+            <h2><i class="fas fa-project-diagram"></i> PROJETS RÉALISÉS</h2>
+            <button class="cancel-btn">
+                <i class="fas fa-times"></i> RETOUR
+            </button>
+        </div>
+        
+        <div class="screen-content">
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-preview">
+                        <img src="assets/images/cisco-topology.jpg" alt="Topologie Cisco" class="project-image">
+                        <div class="project-overlay">
+                            <h3>Conception d'une infrastructure réseau multi-sites</h3>
+                            <p>Mise en place d'un réseau hiérarchique avec routage inter-VLAN et sécurité des accès pour une entreprise de 150 employés.</p>
+                            <button class="view-details-btn" data-project="1">Voir plus de détails</button>
+                        </div>
+                    </div>
+                    
+                    <div id="project-details-1" class="project-details">
+                        <h4>Détails du projet :</h4>
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <h5><i class="fas fa-bullseye"></i> Objectif</h5>
+                                <p>Assurer la connectivité et la segmentation du trafic entre différents départements (RH, Finance, IT).</p>
+                            </div>
+                            <div class="detail-item">
+                                <h5><i class="fas fa-tools"></i> Technologies</h5>
+                                <p>Cisco Packet Tracer, protocoles OSPF, VLANs (802.1Q), ACLs (Access Control Lists), NAT/PAT.</p>
+                            </div>
+                            <div class="detail-item">
+                                <h5><i class="fas fa-graduation-cap"></i> Ce que j'ai appris</h5>
+                                <p>Gestion de la redondance des liens et optimisation de la sécurité périmétrique au niveau des commutateurs.</p>
+                            </div>
+                            <div class="detail-item">
+                                <h5><i class="fas fa-link"></i> Lien</h5>
+                                <a href="https://github.com/tiavina/network-infrastructure" target="_blank">Lien vers GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-preview">
+                        <img src="assets/images/voip-server.jpg" alt="Serveur VoIP" class="project-image">
+                        <div class="project-overlay">
+                            <h3>Serveur de téléphonie IP (VoIP)</h3>
+                            <p>Installation et configuration d'un autocommutateur privé (IP-PBX) pour la gestion d'appels internes gratuits.</p>
+                            <button class="view-details-btn" data-project="2">Voir plus de détails</button>
+                        </div>
+                    </div>
+                    
+                    <div id="project-details-2" class="project-details">
+                        <h4>Détails du projet :</h4>
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <h5><i class="fas fa-bullseye"></i> Objectif</h5>
+                                <p>Réduire les coûts de communication d'une organisation en utilisant le protocole SIP.</p>
+                            </div>
+                            <div class="detail-item">
+                                <h5><i class="fas fa-tools"></i> Technologies</h5>
+                                <p>Linux Debian, Asterisk, Protocole SIP, Softphones (Zoiper/MicroSIP).</p>
+                            </div>
+                            <div class="detail-item">
+                                <h5><i class="fas fa-graduation-cap"></i> Ce que j'ai appris</h5>
+                                <p>Maîtrise de l'administration système Linux et compréhension des flux de données temps réel sur un réseau IP.</p>
+                            </div>
+                            <div class="detail-item">
+                                <h5><i class="fas fa-images"></i> Galerie</h5>
+                                <p>Captures d'écran de la console Asterisk et tests d'appels.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-preview">
+                        <img src="assets/images/ai-assistant.jpg" alt="Assistant IA" class="project-image">
+                        <div class="project-overlay">
+                            <h3>Assistant IA pour la gestion d'incidents réseaux</h3>
+                            <p>Création d'un agent intelligent capable de diagnostiquer les pannes réseaux courantes et d'automatiser les rapports.</p>
+                            <button class="view-details-btn" data-project="3">Voir plus de détails</button>
+                        </div>
+                    </div>
+                    
+                    <div id="project-details-3" class="project-details">
+                        <h4>Détails du projet :</h4>
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <h5><i class="fas fa-bullseye"></i> Objectif</h5>
+                                <p>Optimiser le temps de réponse du support technique grâce à l'IA générative.</p>
+                            </div>
+                            <div class="detail-item">
+                                <h5><i class="fas fa-tools"></i> Technologies</h5>
+                                <p>OpenAI API, No-Code (Make/Zapier), Trello/Jira, Python.</p>
+                            </div>
+                            <div class="detail-item">
+                                <h5><i class="fas fa-graduation-cap"></i> Ce que j'ai appris</h5>
+                                <p>Intégration de l'IA dans des processus métiers existants et manipulation des API pour l'automatisation.</p>
+                            </div>
+                            <div class="detail-item">
+                                <h5><i class="fas fa-certificate"></i> Certification liée</h5>
+                                <p>Formation IA & Automatisation chez Orange Digital Center (ODC).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Écran Témoignages -->
+    <div id="testimonials-screen" class="screen">
+        <div class="screen-header">
+            <h2><i class="fas fa-comments"></i> TÉMOIGNAGES</h2>
+            <button class="cancel-btn">
+                <i class="fas fa-times"></i> RETOUR
+            </button>
+        </div>
+        
+        <div class="screen-content">
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Avis d'enseignant</h3>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Princio est un étudiant rigoureux, doté d'une excellente compréhension des architectures réseaux. Sa maîtrise de l'administration sous Linux et des environnements Cisco est très prometteuse pour sa future carrière d'ingénieur."</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5/5</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Formateur ODC</h3>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Très proactif lors de la formation sur l'IA Générative. Princio a su démontrer une grande capacité d'adaptation en combinant ses bases en télécommunications avec l'automatisation no-code pour optimiser des tâches complexes."</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5/5</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Avis collègue de projet</h3>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Collaborer avec Princio est un atout. Son calme face aux pannes techniques et sa capacité à configurer des serveurs VoIP (Asterisk) ont été les éléments clés de la réussite de notre projet de fin de semestre."</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.5/5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Écran Newsletter -->
+    <div id="newsletter-screen" class="screen">
+        <div class="screen-header">
+            <h2><i class="fas fa-newspaper"></i> NEWSLETTER</h2>
+            <button class="cancel-btn">
+                <i class="fas fa-times"></i> RETOUR
+            </button>
+        </div>
+        
+        <div class="screen-content">
+            <div class="newsletter-container">
+                <div class="newsletter-header">
+                    <h3><i class="fas fa-bell"></i> Restez à l'écoute de l'innovation</h3>
+                    <p>"Passionné par l'évolution rapide des infrastructures numériques, je partage périodiquement mes analyses sur le secteur des télécommunications et l'avancement de mes projets techniques."</p>
+                </div>
+                
+                <form id="newsletterForm" class="newsletter-form">
+                    <div class="form-group">
+                        <label for="newsletter-email">
+                            <i class="fas fa-envelope"></i> Votre Adresse Email :
+                        </label>
+                        <input type="email" id="newsletter-email" placeholder="Entrez votre email ici..." required>
+                    </div>
+                    
+                    <div class="newsletter-options">
+                        <h4><i class="fas fa-bell"></i> Je souhaite recevoir :</h4>
+                        
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="option-projects" name="newsletter-options" checked>
+                            <label for="option-projects">
+                                <span class="checkbox-custom"></span>
+                                Actualités projets : Suivez l'évolution de mes déploiements (Serveurs VoIP, architectures Cisco, etc.).
+                            </label>
+                        </div>
+                        
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="option-veille" name="newsletter-options" checked>
+                            <label for="option-veille">
+                                <span class="checkbox-custom"></span>
+                                Veille Réseaux & Télécoms : Une sélection d'articles sur la 5G, la Cybersécurité et l'IA.
+                            </label>
+                        </div>
+                        
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="option-formations" name="newsletter-options">
+                            <label for="option-formations">
+                                <span class="checkbox-custom"></span>
+                                Nouvelles formations : Mes retours d'expérience sur les certifications (comme celles de l'ODC).
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="newsletter-submit-btn">
+                        <i class="fas fa-paper-plane"></i> S'inscrire à la veille
+                    </button>
+                </form>
+                
+                <div class="newsletter-info">
+                    <p><i class="fas fa-info-circle"></i> Vous recevrez un email de confirmation après votre inscription. Vous pourrez vous désinscrire à tout moment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
